@@ -1,0 +1,120 @@
+{
+  "name": "studyos-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --port 3000",
+    "lint": "tsc --noEmit",
+    "test": "node --test src/security/tests/securityHardening.test.mjs",
+    "test:security": "node --test src/security/tests/securityHardening.test.mjs",
+    "electron:dev": "concurrently -k \"vite --host 0.0.0.0 --port 3000\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron:build": "npm run build && electron-builder --publish never",
+    "electron:build:win": "npm run build && electron-builder --win nsis --publish never",
+    "electron:build:linux": "npm run build && electron-builder --linux AppImage deb --publish never",
+    "dist": "npm run electron:build"
+  },
+  "build": {
+    "appId": "com.studyos.desktop",
+    "productName": "StudyOS Desktop",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "publish": {
+      "provider": "github",
+      "owner": "blackrock-web",
+      "repo": "StudyOS-V2.0.0"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "StudyOS Desktop",
+      "uninstallDisplayName": "StudyOS Desktop",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true,
+      "menuCategory": "Education"
+    },
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "icon": "build/icon.png",
+      "category": "public.app-category.education",
+      "target": [
+        "dmg"
+      ]
+    },
+    "linux": {
+      "icon": "build/icons",
+      "category": "Education",
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "desktop": {
+        "Name": "StudyOS Desktop",
+        "Comment": "Local-first study operating system",
+        "Categories": "Education;Office;"
+      }
+    },
+    "artifactName": "StudyOS-Desktop-${version}-${os}-${arch}.${ext}",
+    "asar": true
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.9",
+    "lucide-react": "^0.344.0",
+    "pdfjs-dist": "^3.11.174",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.12.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^10.0.4",
+    "electron": "^43.2.0",
+    "electron-builder": "^26.15.3",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "wait-on": "^9.1.0"
+  },
+  "productName": "StudyOS Desktop",
+  "description": "StudyOS Desktop \u2014 local-first study operating system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blackrock-web/StudyOS-V2.0.0.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blackrock-web/StudyOS-V2.0.0/issues"
+  },
+  "homepage": "https://github.com/blackrock-web/StudyOS-V2.0.0#readme",
+  "license": "SEE LICENSE IN LICENSE.md"
+}

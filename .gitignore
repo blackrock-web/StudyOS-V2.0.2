@@ -1,0 +1,16 @@
+node_modules/
+dist/
+release/
+out/
+*.log
+.env
+.DS_Store
+Thumbs.db
+*.AppImage
+*.exe
+*.dmg
+*.deb
+*.rpm
+.idea/
+.vscode/
+coverage/

@@ -1,0 +1,8 @@
+{
+  "name": "StudyOS Desktop",
+  "version": "1.0.0",
+  "description": "Local-first Electron desktop study OS for exam preparation — planner, syllabus, PDF workspace, RAG Studio, Study Browser (PW Thor), and GitHub Releases updates.",
+  "repository": "https://github.com/blackrock-web/StudyOS-V2.0.0",
+  "defaultBrowserHome": "https://pwthor.live/",
+  "defaultUpdateRepo": "blackrock-web/StudyOS-V2.0.0"
+}

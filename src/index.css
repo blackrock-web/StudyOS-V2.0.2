@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(139, 92, 246, 0.2);
+    border-radius: 9999px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 92, 246, 0.4);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ========== Ocean Blue Theme — app-wide (icon palette) ========== */
+:root[data-theme="ocean"],
+html.theme-ocean {
+  --os-primary: #3B82F6;
+  --os-primary-deep: #2563EB;
+  --os-teal: #14B8A6;
+  --os-cyan: #22D3EE;
+  --os-surface: #F0FDFA;
+  --os-surface-card: #FFFFFF;
+  --os-border: #A5F3FC;
+  --os-text: #0F172A;
+  --os-muted: #64748B;
+  --os-gradient: linear-gradient(135deg, #3B82F6 0%, #14B8A6 55%, #22D3EE 100%);
+  --os-gradient-soft: linear-gradient(135deg, #EFF6FF 0%, #F0FDFA 50%, #ECFEFF 100%);
+  --os-purple-map: #0EA5E9;
+}
+
+html.theme-ocean body,
+:root[data-theme="ocean"] body {
+  background: var(--os-gradient-soft) !important;
+  color: var(--os-text);
+}
+
+/* Shell / layout */
+html.theme-ocean .bg-\[\#fdf2f8\],
+html.theme-ocean .bg-\[\#FAF9FE\],
+html.theme-ocean .bg-\[\#FAF9FE\],
+:root[data-theme="ocean"] .bg-\[\#fdf2f8\] {
+  background: var(--os-gradient-soft) !important;
+}
+
+html.theme-ocean header {
+  border-color: #A5F3FC !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+}
+
+html.theme-ocean aside {
+  border-color: #CFFAFE !important;
+  background: #ffffff !important;
+}
+
+/* Map purple brand → ocean blue/teal */
+html.theme-ocean .bg-purple-600,
+html.theme-ocean .bg-purple-700,
+html.theme-ocean .bg-purple-500,
+html.theme-ocean .hover\:bg-purple-600:hover,
+html.theme-ocean .hover\:bg-purple-700:hover {
+  background-color: #3B82F6 !important;
+}
+html.theme-ocean .bg-purple-50,
+html.theme-ocean .bg-purple-50\/50,
+html.theme-ocean .bg-purple-100 {
+  background-color: #ECFEFF !important;
+}
+html.theme-ocean .hover\:bg-purple-50:hover,
+html.theme-ocean .hover\:bg-purple-100:hover {
+  background-color: #CFFAFE !important;
+}
+html.theme-ocean .text-purple-600,
+html.theme-ocean .text-purple-700,
+html.theme-ocean .text-purple-500,
+html.theme-ocean .text-purple-800 {
+  color: #0284C7 !important;
+}
+html.theme-ocean .border-purple-200,
+html.theme-ocean .border-purple-100,
+html.theme-ocean .border-purple-300,
+html.theme-ocean .border-purple-500,
+html.theme-ocean .border-\[\#E7E0F8\],
+html.theme-ocean .border-\[\#ECECF5\] {
+  border-color: #A5F3FC !important;
+}
+html.theme-ocean .ring-purple-500,
+html.theme-ocean .ring-purple-600\/30,
+html.theme-ocean .focus\:ring-purple-500:focus {
+  --tw-ring-color: rgb(14 165 233 / 0.45) !important;
+}
+html.theme-ocean .from-purple-600,
+html.theme-ocean .from-\[\#8b5cf6\],
+html.theme-ocean .from-purple-900 {
+  --tw-gradient-from: #3B82F6 !important;
+  --tw-gradient-from-position: 0% !important;
+}
+html.theme-ocean .via-pink-600,
+html.theme-ocean .via-\[\#ec4899\],
+html.theme-ocean .via-indigo-900 {
+  --tw-gradient-stops: var(--tw-gradient-from), #14B8A6, var(--tw-gradient-to) !important;
+}
+html.theme-ocean .to-pink-500,
+html.theme-ocean .to-\[\#f43f5e\],
+html.theme-ocean .to-slate-900,
+html.theme-ocean .to-indigo-600 {
+  --tw-gradient-to: #22D3EE !important;
+}
+html.theme-ocean .bg-gradient-to-r.from-purple-900,
+html.theme-ocean .bg-gradient-to-r.from-\[\#8b5cf6\],
+html.theme-ocean .bg-gradient-to-tr.from-\[\#8b5cf6\] {
+  background-image: var(--os-gradient) !important;
+}
+
+/* Pink accents → teal/cyan */
+html.theme-ocean .bg-pink-500,
+html.theme-ocean .bg-pink-600,
+html.theme-ocean .text-pink-600,
+html.theme-ocean .text-pink-500,
+html.theme-ocean .border-pink-100,
+html.theme-ocean .border-pink-200 {
+  /* color handled selectively */
+}
+html.theme-ocean .text-pink-600 { color: #0D9488 !important; }
+html.theme-ocean .bg-pink-500,
+html.theme-ocean .bg-pink-600 { background-color: #14B8A6 !important; }
+html.theme-ocean .border-pink-100,
+html.theme-ocean .border-pink-200 { border-color: #99F6E4 !important; }
+
+/* Indigo → sky */
+html.theme-ocean .bg-indigo-600,
+html.theme-ocean .text-indigo-600,
+html.theme-ocean .border-indigo-200 {
+}
+html.theme-ocean .bg-indigo-600 { background-color: #0EA5E9 !important; }
+html.theme-ocean .text-indigo-600 { color: #0284C7 !important; }
+
+/* Cards / glass */
+html.theme-ocean .shadow-purple-500\/10,
+html.theme-ocean .shadow-purple-500\/20,
+html.theme-ocean .shadow-pink-500\/20 {
+  --tw-shadow-color: rgb(20 184 166 / 0.2) !important;
+}
+
+/* Sidebar active states */
+html.theme-ocean .bg-purple-600\/10,
+html.theme-ocean .bg-gradient-to-r.from-purple-50 {
+  background-color: #ECFEFF !important;
+}
+
+/* Scrollbars subtle */
+html.theme-ocean .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #5EEAD4;
+  border-radius: 999px;
+}
+
+/* Buttons primary */
+html.theme-ocean button.bg-purple-600,
+html.theme-ocean .bg-purple-600.text-white {
+  background-image: linear-gradient(135deg, #3B82F6, #14B8A6) !important;
+  background-color: transparent !important;
+}
+
+/* Exam manager / settings dark banners */
+html.theme-ocean .from-purple-900.via-indigo-900 {
+  background-image: linear-gradient(135deg, #1E3A8A, #0F766E, #0E7490) !important;
+}

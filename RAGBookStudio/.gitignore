@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+*.egg
+
+# Node
+node_modules/
+dist/
+.DS_Store
+
+# Storage (user data)
+Storage/workspaces/*
+Storage/cache/*
+Storage/temp/*
+Storage/settings.json
+!Storage/workspaces/.gitkeep
+
+# Models weights (large files)
+Models/**/weights/
+Models/**/*.gguf
+Models/**/*.bin
+Models/**/*.safetensors
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+*.log

@@ -1,0 +1,195 @@
+{
+  "exam": "GATE 2027",
+  "organizing_institute": "IIT Madras",
+  "paper_code": "CS",
+  "paper_name": "Computer Science and Information Technology",
+  "sections": [
+    {
+      "section_no": 1,
+      "section_name": "Engineering Mathematics",
+      "subjects": [
+        {
+          "subject": "Discrete Mathematics",
+          "topics": [
+            "Propositional and first order logic",
+            "Sets, relations, functions, partial orders and lattices",
+            "Monoids, Groups",
+            "Graphs: connectivity, matching, colouring",
+            "Combinatorics: counting, recurrence relations, generating functions"
+          ]
+        },
+        {
+          "subject": "Linear Algebra",
+          "topics": [
+            "Matrices, determinants",
+            "System of linear equations",
+            "Eigenvalues and eigenvectors",
+            "LU decomposition"
+          ]
+        },
+        {
+          "subject": "Calculus",
+          "topics": [
+            "Limits, continuity and differentiability",
+            "Maxima and minima",
+            "Mean value theorem",
+            "Integration"
+          ]
+        },
+        {
+          "subject": "Probability and Statistics",
+          "topics": [
+            "Random variables",
+            "Uniform, normal, exponential, Poisson and binomial distributions",
+            "Mean, median, mode and standard deviation",
+            "Conditional probability and Bayes theorem"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 2,
+      "section_name": "Digital Logic",
+      "subjects": [
+        {
+          "subject": "Digital Logic",
+          "topics": [
+            "Boolean algebra and minimization - algebraic technique, Karnaugh map, tabular method",
+            "Design of combinational and sequential circuits",
+            "Number representation and arithmetic (fixed and floating point)"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 3,
+      "section_name": "Computer Organization and Architecture",
+      "subjects": [
+        {
+          "subject": "Computer Organization and Architecture",
+          "topics": [
+            "Instruction set and addressing modes",
+            "Design of arithmetic and logic unit (ALU)",
+            "Design of control unit - hardwired and microprogrammed",
+            "Memory interfacing and hierarchy: performance, cache memory mapping",
+            "I/O interface (interrupt and DMA)",
+            "Instruction pipelining, pipeline hazards"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 4,
+      "section_name": "Programming and Data Structures",
+      "subjects": [
+        {
+          "subject": "Programming and Data Structures",
+          "topics": [
+            "Programming in C",
+            "Recursion",
+            "Arrays, stacks, queues, linked lists",
+            "Trees, binary search trees, binary heaps",
+            "Graphs"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 5,
+      "section_name": "Algorithms",
+      "subjects": [
+        {
+          "subject": "Algorithms",
+          "topics": [
+            "Searching, sorting, hashing",
+            "Asymptotic worst case time and space complexity",
+            "Algorithm design techniques: greedy, dynamic programming and divide-and-conquer",
+            "Graph traversals, minimum spanning trees, shortest paths"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 6,
+      "section_name": "Theory of Computation",
+      "subjects": [
+        {
+          "subject": "Theory of Computation",
+          "topics": [
+            "Regular expressions and finite automata",
+            "Context-free grammars and push-down automata",
+            "Regular and context-free languages, pumping lemma",
+            "Turing machines and undecidability"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 7,
+      "section_name": "Compiler Design",
+      "subjects": [
+        {
+          "subject": "Compiler Design",
+          "topics": [
+            "Lexical analysis, parsing, syntax-directed translation",
+            "Runtime environments",
+            "Intermediate code generation",
+            "Local optimisation",
+            "Data flow analyses: constant propagation, liveness analysis, common sub expression elimination"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 8,
+      "section_name": "Operating System",
+      "subjects": [
+        {
+          "subject": "Operating System",
+          "topics": [
+            "System calls, processes, threads, inter-process communication",
+            "Concurrency and synchronization",
+            "Deadlock",
+            "CPU and I/O scheduling",
+            "Memory management and virtual memory",
+            "File systems"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 9,
+      "section_name": "Databases",
+      "subjects": [
+        {
+          "subject": "Databases",
+          "topics": [
+            "ER-model",
+            "Relational model: relational algebra, tuple calculus, SQL",
+            "Integrity constraints, normal forms",
+            "File organization, indexing (e.g., B and B+ trees)",
+            "Transactions and concurrency control"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 10,
+      "section_name": "Computer Networks",
+      "subjects": [
+        {
+          "subject": "Computer Networks",
+          "topics": [
+            "Principles of Layering",
+            "Basics of switching (circuit, packet and virtual circuit) and performance metrics",
+            "Data link layer: error detection, Medium Access Control, Ethernet",
+            "Distance vector and link state routing",
+            "IPv4 - Fragmentation, CIDR Notation, Network Address Translation",
+            "TCP - flow control and congestion control, socket API",
+            "DNS and HTTP"
+          ]
+        }
+      ]
+    }
+  ]
+}

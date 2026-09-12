@@ -1,0 +1,161 @@
+{
+  "exam": "GATE 2027",
+  "organizing_institute": "IIT Madras",
+  "paper_code": "DA",
+  "paper_name": "Data Science and Artificial Intelligence",
+  "sections": [
+    {
+      "section_no": 1,
+      "section_name": "Probability and Statistics",
+      "subjects": [
+        {
+          "subject": "Probability and Statistics",
+          "topics": [
+            "Counting (permutation and combinations)",
+            "Probability axioms",
+            "Sample space, events, independent events, mutually exclusive events",
+            "Marginal, conditional and joint probability",
+            "Bayes Theorem",
+            "Conditional expectation and variance",
+            "Mean, median, mode and standard deviation",
+            "Correlation and covariance",
+            "Random variables",
+            "Discrete random variables and probability mass functions",
+            "Uniform, Bernoulli, binomial distribution",
+            "Continuous random variables and probability distribution function",
+            "Uniform, exponential, Poisson, normal, standard normal, t-distribution, chi-squared distributions",
+            "Cumulative distribution function",
+            "Conditional PDF",
+            "Central limit theorem",
+            "Confidence interval",
+            "z-test, t-test, chi-squared test"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 2,
+      "section_name": "Linear Algebra",
+      "subjects": [
+        {
+          "subject": "Linear Algebra",
+          "topics": [
+            "Vector space, subspaces",
+            "Linear dependence and independence of vectors",
+            "Matrices, projection matrix, orthogonal matrix, idempotent matrix, partition matrix and their properties",
+            "Quadratic forms",
+            "Systems of linear equations and solutions",
+            "Gaussian elimination",
+            "Eigenvalues and eigenvectors",
+            "Determinant, rank, nullity",
+            "Projections",
+            "LU decomposition",
+            "Singular value decomposition"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 3,
+      "section_name": "Calculus and Optimization",
+      "subjects": [
+        {
+          "subject": "Calculus and Optimization",
+          "topics": [
+            "Functions of a single variable",
+            "Limit, continuity and differentiability",
+            "Taylor series",
+            "Maxima and minima",
+            "Optimization involving a single variable"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 4,
+      "section_name": "Programming, Data Structures and Algorithms",
+      "subjects": [
+        {
+          "subject": "Programming, Data Structures and Algorithms",
+          "topics": [
+            "Programming in Python",
+            "Basic data structures: stacks, queues, linked lists, trees, hash tables",
+            "Search algorithms: linear search and binary search",
+            "Basic sorting algorithms: selection sort, bubble sort and insertion sort",
+            "Divide and conquer: mergesort, quicksort",
+            "Introduction to graph theory",
+            "Basic graph algorithms: traversals and shortest path"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 5,
+      "section_name": "Database Management and Warehousing",
+      "subjects": [
+        {
+          "subject": "Database Management and Warehousing",
+          "topics": [
+            "ER-model",
+            "Relational model: relational algebra, tuple calculus, SQL",
+            "Integrity constraints, normal form",
+            "File organization, indexing, data types",
+            "Data transformation: normalization, discretization, sampling, compression",
+            "Data warehouse modelling: schema for multidimensional data models",
+            "Concept hierarchies",
+            "Measures: categorization and computations"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 6,
+      "section_name": "Machine Learning",
+      "subjects": [
+        {
+          "subject": "Supervised Learning",
+          "topics": [
+            "Regression and classification problems",
+            "Simple linear regression, multiple linear regression",
+            "Ridge regression",
+            "Logistic regression",
+            "k-nearest neighbour",
+            "Naive Bayes classifier",
+            "Linear discriminant analysis",
+            "Support vector machine",
+            "Decision trees",
+            "Bias-variance trade-off",
+            "Cross-validation methods: leave-one-out (LOO) cross-validation, k-folds cross-validation",
+            "Multi-layer perceptron, feed-forward neural network"
+          ]
+        },
+        {
+          "subject": "Unsupervised Learning",
+          "topics": [
+            "Clustering algorithms",
+            "k-means/k-medoid",
+            "Hierarchical clustering: top-down, bottom-up, single-linkage, multiple-linkage",
+            "Dimensionality reduction",
+            "Principal component analysis"
+          ]
+        }
+      ]
+    },
+    {
+      "section_no": 7,
+      "section_name": "AI",
+      "subjects": [
+        {
+          "subject": "AI",
+          "topics": [
+            "Search: informed, uninformed, adversarial",
+            "Logic: propositional, predicate",
+            "Reasoning under uncertainty: conditional independence representation",
+            "Exact inference through variable elimination",
+            "Approximate inference through sampling"
+          ]
+        }
+      ]
+    }
+  ]
+}
